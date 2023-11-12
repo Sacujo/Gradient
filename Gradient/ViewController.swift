@@ -8,6 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private lazy var viewManager: ViewManager = {
+        return ViewManager(controller: self)
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
